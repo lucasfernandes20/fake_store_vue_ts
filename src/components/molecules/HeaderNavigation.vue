@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="hidden laptop:block">
     <ul class="flex items-center">
       <li>
         <Button link class="text-primary-inverse hover:text-primary-inverse/80">

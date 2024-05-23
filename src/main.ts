@@ -1,10 +1,13 @@
 import "./assets/main.css";
+
+import "primeicons/primeicons.css";
+
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 import PrimeVue from "primevue/config";
 // @ts-ignore
 import Lara from "@/presets/lara";
-
+// @ts-ignore
 import App from "./App.vue";
 import router from "./router";
 

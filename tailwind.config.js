@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from "tailwindcss/defaultTheme";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,vue}"],
   darkMode: "class",
@@ -41,6 +42,24 @@ export default {
         "surface-900": "rgb(var(--surface-900))",
         "surface-950": "rgb(var(--surface-950))",
       },
+    },
+    screens: {
+      mobile: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      tablet: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      laptop: "1040px",
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: "1400px",
+      // => @media (min-width: 1400px) { ... }
+
+      tall: { raw: "(min-height: 800px)" },
+      // => @media (min-height: 800px) { ... }
+
+      ...defaultTheme.screens,
     },
   },
   plugins: [],
