@@ -45,7 +45,6 @@ async function login(loginInfo: {
   password: string;
 }): Promise<string> {
   const loginUri = `${API_URL}/auth/login`;
-  console.log("loginInfo", loginInfo);
   const response = await axios.post(loginUri, loginInfo);
   return response.data.token;
 }

@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import CategoryCarouselComponent from './components/organisms/CategoryCarouselComponent.vue';
 import HeroComponent from './components/organisms/HeroComponent.vue';
 
 </script>
 
 <template>
-  <!-- <section class="container mx-auto py-6"> -->
   <HeroComponent />
-  <!-- </section> -->
+  <section class="container mx-auto py-6">
+    <CategoryCarouselComponent />
+  </section>
 </template>
