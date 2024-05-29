@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <main>
+  <section class="container mx-auto py-6">
     <h2>você esta na home</h2>
-  </main>
+  </section>
 </template>
