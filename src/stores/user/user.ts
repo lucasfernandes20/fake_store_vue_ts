@@ -26,8 +26,7 @@ export const useUserStore = defineStore("user", {
         }
         const token = await userServices.login(login);
         localStorage.setItem("token", token);
-        const userData = await userServices.getUserInfo(1);
-        this.setUser(userData);
+        this.setUser(token);
       } catch (error) {
         this.errorMessage =
           "Ocorreu um erro inesperado. Tente novamente mais tarde.";
@@ -36,8 +35,10 @@ export const useUserStore = defineStore("user", {
       }
     },
 
-    setUser(user: User) {
-      this.userData = user;
+    async setUser(token: string) {
+      if (!token) return;
+      const userData = await userServices.getUserInfo(1);
+      this.userData = userData;
     },
 
     logout() {

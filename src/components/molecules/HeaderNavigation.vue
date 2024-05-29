@@ -24,6 +24,4 @@
 import Button from 'primevue/button'
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
