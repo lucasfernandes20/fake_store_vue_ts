@@ -7,7 +7,7 @@ const userStore = useUserStore()
 </script>
 
 <template>
-  <header class="w-full bg-primary py-2" v-if="$route.path !== '/login'">
+  <header class="w-svw bg-primary py-2" v-if="$route.path !== '/login'" v-memo="[userStore.userData]">
     <div class="container mx-auto px-2 laptop:px-0 flex flex-col">
       <div class=" flex items-center justify-between gap-12">
         <RouterLink to="/" class="">
