@@ -2,7 +2,7 @@
     <div class="card flex justify-center">
         <Sidebar v-model:visible="visible" :position="'right'">
             <template #container="{ closeCallback }">
-                <div class="flex flex-col h-full">
+                <div class="flex flex-col h-full bg-background">
                     <div class="flex items-center py-2 justify-between">
                         <Button type="button" @click="closeCallback" icon="pi pi-times"
                             class="h-8 w-8 rounded-none rounded-tr-lg rounded-br-lg"></Button>
@@ -18,21 +18,21 @@
                                     leaveToClass: 'hidden',
                                     leaveActiveClass: 'slideup'
                                 }"
-                                    class="p-3 flex items-center justify-between text-surface-600 dark:text-surface-400 cursor-pointer rounded-md">
+                                    class="p-3 flex items-center justify-between text-foreground cursor-pointer rounded-md">
                                     <span class="font-medium">FAVORITES</span>
                                     <i class="pi pi-chevron-down"></i>
                                 </div>
                                 <ul class="list-none p-0 m-0 overflow-hidden">
                                     <li>
                                         <a v-ripple
-                                            class="flex items-center cursor-pointer p-3 rounded-md text-surface-700 dark:text-surface-0/80 hover:bg-surface-100 dark:hover:bg-surface-700 duration-200 transition-colors">
+                                            class="flex items-center cursor-pointer p-3 rounded-md text-foreground duration-200 transition-colors">
                                             <i class="pi pi-home mr-2"></i>
                                             <span class="font-medium">Dashboard</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a v-ripple
-                                            class="flex items-center cursor-pointer p-3 rounded-md text-surface-700 dark:text-surface-0/80 hover:bg-surface-100 dark:hover:bg-surface-700 duration-200 transition-colors">
+                                            class="flex items-center cursor-pointer p-3 rounded-md text-foreground duration-200 transition-colors">
                                             <i class="pi pi-bookmark mr-2"></i>
                                             <span class="font-medium">Bookmarks</span>
                                         </a>
@@ -176,7 +176,7 @@
                 </div>
             </template>
         </Sidebar>
-        <Button icon="pi pi-bars" @click="visible = true"></Button>
+        <Button icon="pi pi-bars" @click="visible = true" class="text-primary-foreground rounded-xl"></Button>
     </div>
 </template>
 

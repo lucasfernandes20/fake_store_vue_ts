@@ -6,41 +6,45 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "rgb(var(--primary))",
-        "primary-inverse": "rgb(var(--primary-inverse))",
-        "primary-hover": "rgb(var(--primary-hover))",
-        "primary-active-color": "rgb(var(--primary-active-color))",
-
-        "primary-highlight":
-          "rgb(var(--primary)/var(--primary-highlight-opacity))",
-        "primary-highlight-inverse": "rgb(var(--primary-highlight-inverse))",
-        "primary-highlight-hover":
-          "rgb(var(--primary)/var(--primary-highlight-hover-opacity))",
-
-        "primary-50": "rgb(var(--primary-50))",
-        "primary-100": "rgb(var(--primary-100))",
-        "primary-200": "rgb(var(--primary-200))",
-        "primary-300": "rgb(var(--primary-300))",
-        "primary-400": "rgb(var(--primary-400))",
-        "primary-500": "rgb(var(--primary-500))",
-        "primary-600": "rgb(var(--primary-600))",
-        "primary-700": "rgb(var(--primary-700))",
-        "primary-800": "rgb(var(--primary-800))",
-        "primary-900": "rgb(var(--primary-900))",
-        "primary-950": "rgb(var(--primary-950))",
-
-        "surface-0": "rgb(var(--surface-0))",
-        "surface-50": "rgb(var(--surface-50))",
-        "surface-100": "rgb(var(--surface-100))",
-        "surface-200": "rgb(var(--surface-200))",
-        "surface-300": "rgb(var(--surface-300))",
-        "surface-400": "rgb(var(--surface-400))",
-        "surface-500": "rgb(var(--surface-500))",
-        "surface-600": "rgb(var(--surface-600))",
-        "surface-700": "rgb(var(--surface-700))",
-        "surface-800": "rgb(var(--surface-800))",
-        "surface-900": "rgb(var(--surface-900))",
-        "surface-950": "rgb(var(--surface-950))",
+        border: "rgb(var(--border))",
+        input: "rgb(var(--input))",
+        ring: "rgb(var(--ring))",
+        background: "rgb(var(--background))",
+        foreground: "rgb(var(--foreground))",
+        primary: {
+          DEFAULT: "rgb(var(--primary))",
+          foreground: "rgb(var(--primary-foreground))",
+          hover: "rgb(var(--primary-hover))",
+        },
+        secondary: {
+          DEFAULT: "rgb(var(--secondary))",
+          foreground: "rgb(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "rgb(var(--destructive))",
+          foreground: "rgb(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "rgb(var(--muted))",
+          foreground: "rgb(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "rgb(var(--accent))",
+          foreground: "rgb(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "rgb(var(--popover))",
+          foreground: "rgb(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "rgb(var(--card))",
+          foreground: "rgb(var(--card-foreground))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
     screens: {

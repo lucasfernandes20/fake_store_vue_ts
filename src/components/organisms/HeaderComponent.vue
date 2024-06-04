@@ -13,7 +13,7 @@ const userStore = useUserStore()
         <RouterLink to="/" class="">
           <img src="/src/assets/logo/written.png" alt="logo" class="h-8 cursor-pointer" />
         </RouterLink>
-        <p class="text-primary-inverse">Bem vindo(a)
+        <p class="text-primary-foreground">Bem vindo(a)
           <span class="underline font-bold cursor-pointer">
             {{
               userStore.userData?.name.firstname

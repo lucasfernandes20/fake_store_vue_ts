@@ -21,7 +21,7 @@ onMounted(() => {
 
 <template>
   <HeaderComponent />
-  <main class="bg-[#FFFFF0] w-svw overflow-x-hidden">
+  <main class="bg-background w-svw overflow-x-hidden">
     <RouterView />
   </main>
 </template>
